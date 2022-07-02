@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- -------- boxicons link -------- -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Login and Sign up Page</title>
+  </head>
+  <body>
+    <!-- ---------- container ---------- -->
+    <div class="contianer" id="container">
+      <!-- ------------- row ------------- -->
+      <div class="row">
+        <!-- ----------- sign up ----------- -->
+        <div class="col align-center flex-col sign-up">
+          <div class="form-wrapper align-center">
+            <form action="#" class="form sign-up">
+              <div class="input-group">
+                <i class="bx bxs-user"></i>
+                <input type="text" name="username" placeholder="Username" />
+              </div>
+
+              <div class="input-group">
+                <i class="bx bx-mail-send"></i>
+                <input type="email" name="email" placeholder="Email" />
+              </div>
+
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input type="password" name="password" placeholder="Password" />
+              </div>
+
+              <div class="input-group">
+                <i class="bx bxs-lock-alt"></i>
+                <input
+                  type="password"
+                  name="confirm password"
+                  placeholder="Confirm password"
+                />
+              </div>
+
+              <button>Sign up</button>
+
+              <p>
+                <span>Already have an account?</span>
+                <b id="sign-in">Sign in here</b>
+              </p>
+            </form>
+          </div>
+
+          <div class="form-wrapper">
+            <div class="social-list align-center sign-up">
+              <div class="align-center facebook-bg">
+                <i class="bx bxl-facebook"></i>
+              </div>
+
+              <div class="align-center google-bg">
+                <i class="bx bxl-google"></i>
+              </div>
+
+              <div class="align-center twitter-bg">
+                <i class="bx bxl-twitter"></i>
+              </div>
+
+              <div class="align-center insta-bg">
+                <i class="bx bxl-instagram-alt"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------- End sign up ----------- -->
+        <!-- ----------- sign in ----------- -->
+        <!-- -----------  End sign in ----------- -->
+      </div>
+      <!-- ------------- End row ------------- -->
+    </div>
+    <!-- ---------- End container ---------- -->
+    <!-- ----------- Script ------------ -->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
