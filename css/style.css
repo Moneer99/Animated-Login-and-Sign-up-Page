@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+:root {
+  --black: #000;
+  --white: #fff;
+  --gray: #efefef;
+  --gray-2: #757575;
+
+  --facebook-color: #4267b2;
+  --google-color: #db4437;
+  --twitter-color: #1da1f2;
+  --insta-color: #e1306c;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", san-serif;
+  height: 100vh;
+  overflow: hidden;
+  font-weight: 400;
+}
+
+.container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+.col {
+  width: 50%;
+  padding: 0 2rem;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.form-wrapper {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.form {
+  padding: 1rem;
+  background-color: var(--white);
+  border-radius: 1.5rem;
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  transition-delay: 1s;
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+  margin: 1rem 0;
+  border: 1px solid;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: var(--gray-2);
+}
+
+.input-group input:focus {
+  border: 0.125rem solid var(--twitter-color);
+}
+
+.form button {
+  cursor: pointer;
+  width: 100%;
+  padding: 0.8rem 0;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--twitter-color);
+  color: var(--white);
+  font-size: 1.2rem;
+  outline: none;
+}
+
+.form p {
+  margin: 1rem 0;
+  font-size: 0.7rem;
+}
+
+.social-list {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+  transition-delay: 1.2s;
+}
+
+.social-list > div {
+  color: var(--white);
+  margin: 0 0.5rem;
+  padding: 0.7rem;
+  cursor: pointer;
+  border: radius 0.5rem;
+  cursor: pointer;
+  transform: scale(0);
+  transition: 0.5s ease-in-out;
+}
+
+.social-list > div:nth-child(1) {
+  transition-delay: 1.4s;
+}
